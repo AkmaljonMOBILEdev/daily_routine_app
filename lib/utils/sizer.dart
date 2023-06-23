@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 
+/// Katta hajmdagi Widgetlar uchun shundan foydalanamiz,
+/// kichikroq hajmdagilar uchun esa flutter_screenutildan
+
 class AppSizer{
 
   static double editH(BuildContext context, itemHeight){
