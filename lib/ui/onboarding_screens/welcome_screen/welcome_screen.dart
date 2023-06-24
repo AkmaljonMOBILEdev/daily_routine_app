@@ -1,3 +1,4 @@
+import 'package:daily_routine_app/utils/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -50,7 +51,9 @@ class WelcomeScreen extends StatelessWidget {
                       height: (50 / 812) * AppHeight,
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, RouteNames.tagBox);
+                        },
                         style: ButtonStyle(
                             shape: MaterialStateProperty.all(
                                 RoundedRectangleBorder(
