@@ -5,12 +5,12 @@ import 'colors.dart';
 class AppTheme{
 
   static ThemeData lightTheme=ThemeData(
-      scaffoldBackgroundColor: AppColors.cFFFFFF,
+      scaffoldBackgroundColor: AppColors.white,
       appBarTheme: const AppBarTheme(
           elevation: 0,
-          backgroundColor: AppColors.cFFFFFF,
+          backgroundColor: AppColors.white,
           systemOverlayStyle: SystemUiOverlayStyle(
-              statusBarColor: AppColors.cFFFFFF,
+              statusBarColor: AppColors.white,
               statusBarBrightness: Brightness.dark,
               statusBarIconBrightness: Brightness.dark
           )
@@ -136,95 +136,95 @@ class AppTheme{
       textTheme: const TextTheme(
         //display
           displayLarge: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 57,
               fontWeight: FontWeight.w800,
               fontFamily: 'SF Pro Text'
           ),
           displayMedium: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 45,
               fontWeight: FontWeight.w700,
               fontFamily: 'SF Pro Text'
           ),
           displaySmall: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 36,
               fontWeight: FontWeight.w600,
               fontFamily: 'SF Pro Text'
           ),
           //headline
           headlineLarge: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 32,
               fontWeight: FontWeight.w700,
               fontFamily: 'SF Pro Text'
           ),
           headlineMedium: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 28,
               fontWeight: FontWeight.w500,
               fontFamily: 'SF Pro Text'
           ),
           headlineSmall: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 24,
               fontWeight: FontWeight.w400,
               fontFamily: 'SF Pro Text'
           ),
           //title
           titleLarge: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 22,
               fontWeight: FontWeight.w700,
               fontFamily: 'SF Pro Text'
           ),
           titleMedium: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 16,
               fontWeight: FontWeight.w600,
               fontFamily: 'SF Pro Text'
           ),
           titleSmall: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 14,
               fontWeight: FontWeight.w500,
               fontFamily: 'SF Pro Text'
           ),
           //label
           labelLarge: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 14,
               fontWeight: FontWeight.w600,
               fontFamily: 'SF Pro Text'
           ),
           labelMedium: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 12,
               fontWeight: FontWeight.w500,
               fontFamily: 'SF Pro Text'
           ),
           labelSmall: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 11,
               fontWeight: FontWeight.w500,
               fontFamily: 'SF Pro Text'
           ),
           //body
           bodyLarge: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 16,
               fontWeight: FontWeight.w500,
               fontFamily: 'SF Pro Text'
           ),
           bodyMedium: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 14,
               fontWeight: FontWeight.w500,
               fontFamily: 'SF Pro Text'
           ),
           bodySmall: TextStyle(
-              color: AppColors.cFFFFFF,
+              color: AppColors.white,
               fontSize: 12,
               fontWeight: FontWeight.w500,
               fontFamily: 'SF Pro Text'
