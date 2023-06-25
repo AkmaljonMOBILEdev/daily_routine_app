@@ -46,6 +46,7 @@ class WelcomeScreen extends StatelessWidget {
                 Padding(
                   padding:
                       EdgeInsets.symmetric(horizontal: (24 / 375) * AppWidth),
+                  EdgeInsets.symmetric(horizontal: (24 / 375) * AppWidth),
                   child: SizedBox(
                       height: (50 / 812) * AppHeight,
                       width: double.infinity,
@@ -62,6 +63,13 @@ class WelcomeScreen extends StatelessWidget {
                             backgroundColor:
                                 const MaterialStatePropertyAll<Color>(
                                     Colors.blueAccent)),
+                                    BorderRadius.circular(50 / 812) *
+                                        AppHeight)),
+                            elevation: MaterialStatePropertyAll<double>(
+                                (20 * 812) * AppHeight),
+                            backgroundColor:
+                            const MaterialStatePropertyAll<Color>(
+                                Colors.blueAccent)),
                         child: const Text('Elevate button'),
                       )),
                 ),
