@@ -1,3 +1,4 @@
+
 import 'package:daily_routine_app/utils/app_routes.dart';
 import 'package:daily_routine_app/utils/theme.dart';
 import 'package:flutter/material.dart';
@@ -18,8 +19,9 @@ class MyApp extends StatelessWidget {
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-      initialRoute: RouteNames.tagBox,
+      initialRoute: RouteNames.splashScreen,
       onGenerateRoute: AppRoutes.generateRoute,
+
     );
   }
 }
