@@ -46,6 +46,7 @@ class WelcomeScreen extends StatelessWidget {
               children: [
                 Padding(
                   padding:
+                      EdgeInsets.symmetric(horizontal: (24 / 375) * AppWidth),
                   EdgeInsets.symmetric(horizontal: (24 / 375) * AppWidth),
                   child: SizedBox(
                       height: (50 / 812) * AppHeight,
@@ -58,6 +59,13 @@ class WelcomeScreen extends StatelessWidget {
                             shape: MaterialStateProperty.all(
                                 RoundedRectangleBorder(
                                     borderRadius:
+                                        BorderRadius.circular(50 / 812) *
+                                            AppHeight)),
+                            elevation: MaterialStatePropertyAll<double>(
+                                (20 * 812) * AppHeight),
+                            backgroundColor:
+                                const MaterialStatePropertyAll<Color>(
+                                    Colors.blueAccent)),
                                     BorderRadius.circular(50 / 812) *
                                         AppHeight)),
                             elevation: MaterialStatePropertyAll<double>(
