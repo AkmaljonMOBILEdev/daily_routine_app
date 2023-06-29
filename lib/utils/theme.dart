@@ -118,14 +118,9 @@ class AppTheme{
 
   static ThemeData darkTheme=ThemeData(
       scaffoldBackgroundColor: AppColors.c1C1243,
-      // bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-      //     backgroundColor: AppColors.c1C1243,
-      //     selectedItemColor: AppColors.cFF8A00,
-      //     unselectedItemColor: AppColors.c1C1243,
-      //     showSelectedLabels: true,
-      //     showUnselectedLabels: true,
-      //
-      // ),
+      iconTheme: IconThemeData(
+          color: AppColors.white
+      ),
       appBarTheme: const AppBarTheme(
           backgroundColor: AppColors.c1C1243,
           systemOverlayStyle: SystemUiOverlayStyle(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CalendarScreen extends StatefulWidget {
   const CalendarScreen({super.key});
@@ -13,7 +14,13 @@ class _CalendarScreenState extends State<CalendarScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: const Text('Calendar'),
+        automaticallyImplyLeading: false,
+        title: Row(
+          children: [
+            SizedBox(width: 12.w,),
+            const Text('Calendar'),
+          ],
+        ),
       ),
     );
   }

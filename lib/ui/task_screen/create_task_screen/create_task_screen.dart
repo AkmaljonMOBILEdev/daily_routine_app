@@ -64,15 +64,20 @@ showCreateTask(BuildContext context) {
                         },
                         icon: SvgPicture.asset(
                           AppIcons.cansel,
-                        ))
+                          color: AppColors.white,
+                        ),
+                    color: AppColors.white,),
+                    SizedBox(width: 8.w,)
                   ],
                 ),
                 Expanded(
                   child: ListView(
+                    physics: BouncingScrollPhysics(),
                     children: [
                       GetTaskTitle(caption: 'Title', onChanged: (v){
 
                       },),
+
 
                     ],
                   ),

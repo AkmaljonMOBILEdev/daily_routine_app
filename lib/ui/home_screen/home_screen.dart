@@ -17,7 +17,13 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: const Text('Home screen'),
+        automaticallyImplyLeading: false,
+        title: Row(
+          children: [
+            SizedBox(width: 12.w,),
+            const Text('Home screen'),
+          ],
+        ),
         actions: [
           ZoomTapAnimation(
             onTap: (){

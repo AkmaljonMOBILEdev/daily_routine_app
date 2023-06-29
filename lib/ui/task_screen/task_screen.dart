@@ -17,16 +17,22 @@ class _TaskScreenState extends State<TaskScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Text('Tasks'),
+        automaticallyImplyLeading: false,
+        title: Row(
+          children: [
+            SizedBox(width: 12.w,),
+            const Text('Tasks'),
+          ],
+        ),
         actions: [
           ZoomTapAnimation(
             onTap: (){},
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 25,vertical: 6),
+              margin: const EdgeInsets.symmetric(horizontal: 25,vertical: 6),
               height: 45.w,
               width: 40.w,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(12.r),color: AppColors.cFF8A00),
-              child: Icon(Icons.add),
+              child: const Icon(Icons.add),
             ),
           ),
 
