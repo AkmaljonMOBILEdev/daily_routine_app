@@ -5,5 +5,8 @@ class AppImages{
   static const calendar = 'assets/svg/calendar.svg';
   static const task = 'assets/svg/task.svg';
   static const settings = 'assets/svg/settings.svg';
+  static const avatar = 'assets/images/avatar.png';
+
+
 
 }
