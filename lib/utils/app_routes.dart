@@ -8,10 +8,10 @@ import 'package:daily_routine_app/ui/settings_screen/edit_profile_screen/edit_pr
 import 'package:daily_routine_app/ui/settings_screen/settings_screen.dart';
 import 'package:daily_routine_app/ui/settings_screen/terms_of_privacy_screen/terms_screen.dart';
 import 'package:daily_routine_app/ui/tag_box.dart';
-import 'package:daily_routine_app/ui/task_screen/create_task_screen/create_task_screen.dart';
 import 'package:daily_routine_app/ui/task_screen/task_screen.dart';
 import 'package:flutter/material.dart';
 import '../ui/onboarding_screens/welcome_screen/welcome_screen.dart';
+import '../ui/task_screen/create_task_screen/create_task_screen.dart';
 
 class RouteNames{
   static const String splashScreen='/';
