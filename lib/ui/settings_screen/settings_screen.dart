@@ -79,7 +79,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     child: Icon(CupertinoIcons.moon_fill),
                   ),
                   title: Text('Dark theme'),
-                  trailing:Switch(
+                  trailing:CupertinoSwitch(
                     onChanged: (h) {
                       setState(() {
                         appTheme = initialval ? themLight : themeDark;
@@ -115,18 +115,21 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       showModalBottomSheet<void>(
                         context: context, builder: (BuildContext context) {
                           return Container(
-                            height: 250.h,
-                            color: AppColors.c643FDB,
+                            height: 400.h,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: AppColors.c1C1243,
+                            ),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.min,
                                   children:[
-                                   EditLanguage(title: 'English', photo: AppImages.america),
+                                   EditLanguage(title: 'English', photo: AppImages.english),
                                     SizedBox(height: 20.w,),
-                                    EditLanguage(title: 'Uzbek', photo: AppImages.avatar),
+                                    EditLanguage(title: 'Uzbek', photo: AppImages.uzbek),
                                     SizedBox(height: 20.w,),
-                                    EditLanguage(title: 'Russian', photo: AppImages.avatar),
+                                    EditLanguage(title: 'Russian', photo: AppImages.ruusian),
 
 
                                   ],

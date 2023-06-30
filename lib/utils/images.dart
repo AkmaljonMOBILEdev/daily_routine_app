@@ -6,7 +6,10 @@ class AppImages{
   static const task = 'assets/svg/task.svg';
   static const settings = 'assets/svg/settings.svg';
   static const avatar = 'assets/images/avatar.png';
-  static const america = 'assets/images/America.png';
+  static const english = 'assets/images/united_kingdom.png';
+  static const uzbek = 'assets/images/uzbekistan.png';
+  static const ruusian = 'assets/images/ruusian.png';
+
 
 
 
