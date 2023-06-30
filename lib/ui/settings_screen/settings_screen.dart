@@ -113,7 +113,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   trailing: IconButton(
                     icon:  Icon(Icons.keyboard_arrow_down_sharp,color: Colors.white,), onPressed: () {
                       showModalBottomSheet<void>(
+                        backgroundColor: Colors.transparent,
                         context: context, builder: (BuildContext context) {
+
                           return Container(
                             height: 400.h,
                             decoration: BoxDecoration(

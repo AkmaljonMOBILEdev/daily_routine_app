@@ -17,8 +17,6 @@ class EditProfileScreen extends StatefulWidget {
 class _EditProfileScreenState extends State<EditProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    double AppWidth = MediaQuery.of(context).size.width;
-    double AppHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
