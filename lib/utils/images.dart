@@ -6,6 +6,7 @@ class AppImages{
   static const task = 'assets/svg/task.svg';
   static const settings = 'assets/svg/settings.svg';
   static const avatar = 'assets/images/avatar.png';
+  static const america = 'assets/images/America.png';
 
 
 

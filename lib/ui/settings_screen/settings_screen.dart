@@ -7,6 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
+import '../../utils/app_routes.dart';
 import '../../utils/colors.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -26,6 +27,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         elevation: 0,
         title: Row(
           children: [
@@ -36,7 +38,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
         ),
         actions: [
           ZoomTapAnimation(
-            onTap: (){},
+            onTap: (){
+              Navigator.pushNamed(context, RouteNames.editProfileScreen);
+            },
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 25,vertical: 6),
               height: 32.w,
@@ -60,7 +64,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             SizedBox(height: 15.h,),
             Text('Tien Tom',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w600),),
             Text('TienTom3010@gmail.com',style: TextStyle(fontSize: 12,color: AppColors.cA29EB6),),
-            SizedBox(height: 150,),
+            SizedBox(height: 150.h,),
 
             Container(
               height:80.h ,
@@ -107,7 +111,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                   title: Text('Language'),
                   trailing: IconButton(
-                    icon:  Icon(Icons.keyboard_arrow_right_rounded, color: Colors.white,), onPressed: () {
+                    icon:  Icon(Icons.keyboard_arrow_down_sharp,color: Colors.white,), onPressed: () {
                       showModalBottomSheet<void>(
                         context: context, builder: (BuildContext context) {
                           return Container(
@@ -118,11 +122,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.min,
                                   children:[
-                                   EditLanguage(title: 'English', photo: AppImages.avatar),
+                                   EditLanguage(title: 'English', photo: AppImages.america),
                                     SizedBox(height: 20.w,),
                                     EditLanguage(title: 'Uzbek', photo: AppImages.avatar),
                                     SizedBox(height: 20.w,),
                                     EditLanguage(title: 'Russian', photo: AppImages.avatar),
+
 
                                   ],
                               ),
