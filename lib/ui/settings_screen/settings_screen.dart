@@ -1,3 +1,4 @@
+import 'package:daily_routine_app/ui/settings_screen/widgets/language_edit_widget.dart';
 import 'package:daily_routine_app/utils/icons.dart';
 import 'package:daily_routine_app/utils/images.dart';
 import 'package:flutter/cupertino.dart';
@@ -91,6 +92,51 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
 
             SizedBox(height: 30.h,),
+
+            Container(
+              height:80.h ,
+              width:327.w ,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(16.r),border: Border.all(color: Colors.white)),
+              child: Center(
+                child: ListTile(
+                  leading: Container(
+                    height: 48.h,
+                    width: 48.w,
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(40.r),color: AppColors.cEFF1F3),
+                    child: Icon(Icons.language),
+                  ),
+                  title: Text('Language'),
+                  trailing: IconButton(
+                    icon:  Icon(Icons.keyboard_arrow_right_rounded, color: Colors.white,), onPressed: () {
+                      showModalBottomSheet<void>(
+                        context: context, builder: (BuildContext context) {
+                          return Container(
+                            height: 250.h,
+                            color: AppColors.c643FDB,
+                              child: Center(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.min,
+                                  children:[
+                                   EditLanguage(title: 'English', photo: AppImages.avatar),
+                                    SizedBox(height: 20.w,),
+                                    EditLanguage(title: 'Uzbek', photo: AppImages.avatar),
+                                    SizedBox(height: 20.w,),
+                                    EditLanguage(title: 'Russian', photo: AppImages.avatar),
+
+                                  ],
+                              ),
+                            ),
+                        );
+                      },
+                    );
+                  },
+
+
+                  ),
+                ),
+              ),
+            ),
 
 
 
