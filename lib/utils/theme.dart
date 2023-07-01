@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'colors.dart';
 
-class AppTheme{
 
+
+class AppTheme{
   static ThemeData lightTheme=ThemeData(
       scaffoldBackgroundColor: AppColors.white,
       appBarTheme: const AppBarTheme(

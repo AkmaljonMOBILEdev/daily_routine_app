@@ -66,7 +66,8 @@ class WelcomeScreen extends StatelessWidget {
                                 const MaterialStatePropertyAll<Color>(
                                     Colors.blueAccent)),
                         child: const Text('Elevate button'),
-                      )),
+                      )
+                  ),
                 ),
               ],
             ),
