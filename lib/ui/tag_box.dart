@@ -2,6 +2,7 @@ import 'package:daily_routine_app/ui/calendar_screen/calendar_screen.dart';
 import 'package:daily_routine_app/ui/home_screen/home_screen.dart';
 import 'package:daily_routine_app/ui/settings_screen/settings_screen.dart';
 import 'package:daily_routine_app/ui/task_screen/task_screen.dart';
+import 'package:daily_routine_app/ui/widgets/universal_input.dart';
 import 'package:daily_routine_app/utils/colors.dart';
 import 'package:daily_routine_app/utils/images.dart';
 import 'package:flutter/cupertino.dart';
@@ -58,39 +59,9 @@ class _TagBoxState extends State<TagBox> {
                         SizedBox(height: 30.h,),
                         Text('Add Task',style:Theme.of(context).textTheme.titleLarge!.copyWith(fontWeight: FontWeight.w500),),
                         SizedBox(height: 20.h,),
-                        TextField(
-                          style: Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w500),
-                          decoration: InputDecoration(
-                            labelText: 'Task Name',
-                            labelStyle: Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w500,color: Colors.white.withOpacity(0.7)),
-                            enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(16.r),
-                              borderSide: BorderSide(color: AppColors.c643FDB),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(16.r),
-                              borderSide: BorderSide(color: AppColors.c643FDB),
-                            ),
-                          ),
-                        ),
+                        UniversalInput(labelText: 'Task Name', maxLines: 1),
                         SizedBox(height: 25.h),
-                        TextField(
-                          maxLines: 4,
-                          style: Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w500),
-                          decoration: InputDecoration(
-                            label: Text('Description'),
-                            labelStyle: Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.w500,color: Colors.white.withOpacity(0.8)),
-                            enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(16.r),
-                              borderSide: BorderSide(color: AppColors.c643FDB),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(16.r),
-                              borderSide: BorderSide(color: AppColors.c643FDB),
-                            ),
-                          ),
-                        ),
-
+                        UniversalInput(labelText: 'Description', maxLines: 4)
                       ],
                   ),
                 );
