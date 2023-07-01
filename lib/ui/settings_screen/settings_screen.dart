@@ -15,24 +15,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        title: Text('Settings'),
-        actions: [
-          ZoomTapAnimation(
-            onTap: (){},
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 25,vertical: 6),
-              height: 45.w,
-              width: 40.w,
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(12.r),color: AppColors.cFF8A00),
-              child: Icon(Icons.add),
-            ),
-          ),
 
-
-        ],
-      ),
     );
   }
 }

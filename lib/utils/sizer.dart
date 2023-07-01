@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 /// kichikroq hajmdagilar uchun esa flutter_screenutildan
 
 class AppSizer{
-
   static double editH(BuildContext context, itemHeight){
     double  height=MediaQuery.of(context).size.height;
     return height*itemHeight/812;
