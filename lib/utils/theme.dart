@@ -134,7 +134,7 @@ class AppTheme{
               statusBarIconBrightness: Brightness.light
           )
       ),
-      textTheme: const TextTheme(
+      textTheme:  TextTheme(
         //display
           displayLarge: TextStyle(
               color: AppColors.white,
@@ -225,7 +225,7 @@ class AppTheme{
               fontFamily: 'SF Pro Text'
           ),
           bodySmall: TextStyle(
-              color: AppColors.white,
+              color: AppColors.passiveWhite,
               fontSize: 12,
               fontWeight: FontWeight.w500,
               fontFamily: 'SF Pro Text'
