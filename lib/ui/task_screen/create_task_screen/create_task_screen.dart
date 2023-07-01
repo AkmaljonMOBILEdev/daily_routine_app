@@ -21,7 +21,12 @@ class _CreateTaskScreenState extends State<CreateTaskScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        title: Text('Add Task Screen'),
+      ),
+    );
   }
 }
 
