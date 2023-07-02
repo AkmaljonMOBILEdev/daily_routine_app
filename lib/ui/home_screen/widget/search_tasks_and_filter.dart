@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
@@ -16,7 +17,7 @@ class _SearchTasksAndFilterState extends State<SearchTasksAndFilter> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 18),
+      margin: EdgeInsets.symmetric(horizontal: 18.h),
       child: Row(
         children: [
           SizedBox(
@@ -26,13 +27,13 @@ class _SearchTasksAndFilterState extends State<SearchTasksAndFilter> {
               decoration: InputDecoration(
                 hintText: "Search tasks",
                 prefixIcon: Padding(
-                  padding: const EdgeInsets.all(15),
+                  padding:  EdgeInsets.all(15.h),
                   child: SvgPicture.asset(AppIcons.search),
                 ),
                 filled: true,
                 fillColor: Colors.grey,
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(5.r),
                   borderSide: BorderSide.none,
                 ),
               ),
@@ -47,9 +48,9 @@ class _SearchTasksAndFilterState extends State<SearchTasksAndFilter> {
               width: AppSizer.editW(context, 58),
               height: AppSizer.editH(context, 58),
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5), color: Colors.orange),
+                  borderRadius: BorderRadius.circular(5.r), color: Colors.orange),
               child: Padding(
-                padding: const EdgeInsets.all(15),
+                padding:  EdgeInsets.all(15.h),
                 child: SvgPicture.asset(
                   AppIcons.filter,
                 ),
