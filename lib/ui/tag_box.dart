@@ -8,7 +8,7 @@ import 'package:daily_routine_app/utils/images.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';                                                                         
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
 class TagBox extends StatefulWidget {
@@ -46,7 +46,7 @@ class _TagBoxState extends State<TagBox> {
               showModalBottomSheet(
                 isScrollControlled: true,
                  backgroundColor: AppColors.c1C1243,
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(topRight: Radius.circular(30),topLeft: Radius.circular(30)),),
                   context: context,
                   builder: (context){
@@ -59,24 +59,22 @@ class _TagBoxState extends State<TagBox> {
                         SizedBox(height: 30.h,),
                         Text('Add Task',style:Theme.of(context).textTheme.titleLarge!.copyWith(fontWeight: FontWeight.w500),),
                         SizedBox(height: 20.h,),
-                        UniversalInput(labelText: 'Task Name', maxLines: 1),
+                        const UniversalInput(labelText: 'Task Name', maxLines: 1),
                         SizedBox(height: 25.h),
-                        UniversalInput(labelText: 'Description', maxLines: 4)
+                        const UniversalInput(labelText: 'Description', maxLines: 4)
                       ],
                   ),
                 );
               });
             },
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 25,vertical: 6),
+              margin: const EdgeInsets.symmetric(horizontal: 25,vertical: 6),
               height: 45.w,
               width: 40.w,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(12.r),color: AppColors.cFF8A00),
-              child: Icon(Icons.add),
+              child: const Icon(Icons.add),
             ),
           ),
-
-
         ],
       ),
       body: Stack(

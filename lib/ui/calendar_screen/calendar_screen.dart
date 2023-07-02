@@ -1,4 +1,5 @@
 import 'package:daily_routine_app/ui/calendar_screen/widgets/calendar_button.dart';
+import 'package:daily_routine_app/utils/sizer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -27,15 +28,15 @@ class _CalendarScreenState extends State<CalendarScreen> {
             Column(
               children: [
                 SizedBox(height: 10.h,),
-                Text('June',style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 28),),
-                SizedBox(height: 20,),
+                Text('June',style: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 28.sp),),
+                SizedBox(height: 20.h,),
                 SizedBox(
                   height: 72.h,
                   child: ListView(
                       scrollDirection: Axis.horizontal,
                       children:List.generate(7, (index) => Container(
                         margin: EdgeInsets.symmetric(horizontal: 5.w),
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color:AppColors.c1C1243,border: Border.all(color: AppColors.c643FDB)),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(10.r),color:AppColors.c1C1243,border: Border.all(color: AppColors.c643FDB)),
                         child: CalendarButton(onTap: (){
                           currentIndex = index;
                           setState(() {});
@@ -46,38 +47,38 @@ class _CalendarScreenState extends State<CalendarScreen> {
                 ),
                 SizedBox(height: 30.h,),
                 Container(
-                  height: 120.h,
-                  width: 335.w,
+                  height: AppSizer.editH(context, 120),
+                  width:AppSizer.editW(context, 335),
                   color: Colors.red,
                 ),
                 SizedBox(height: 10.h,),
                 Container(
-                  height: 120.h,
-                  width: 335.w,
+                  height: AppSizer.editH(context, 120),
+                  width:AppSizer.editW(context, 335),
                   color: Colors.red,
                 ),
                 SizedBox(height: 10.h,),
                 Container(
-                  height: 120.h,
-                  width: 335.w,
+                  height: AppSizer.editH(context, 120),
+                  width:AppSizer.editW(context, 335),
                   color: Colors.red,
                 ),
                 SizedBox(height: 10.h,),
                 Container(
-                  height: 120.h,
-                  width: 335.w,
+                  height: AppSizer.editH(context, 120),
+                  width:AppSizer.editW(context, 335),
                   color: Colors.red,
                 ),
                 SizedBox(height: 10.h,),
                 Container(
-                  height: 120.h,
-                  width: 335.w,
+                  height: AppSizer.editH(context, 120),
+                  width:AppSizer.editW(context, 335),
                   color: Colors.red,
                 ),
                 SizedBox(height: 10.h,),
                 Container(
-                  height: 120.h,
-                  width: 335.w,
+                  height: AppSizer.editH(context, 120),
+                  width:AppSizer.editW(context, 335),
                   color: Colors.red,
                 ),
 
